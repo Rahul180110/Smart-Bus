@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>Admin dashboard</title>
+	<link rel="stylesheet" href="./CSS/dashboard.css">
+
+</head>
+
+<body>
+	<header>
+
+		<div class="logosec">
+			<div class="logo">Bus Travels</div>
+			<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn" id="menuicn" alt="menu-icon">
+		</div>
+
+		<div class="message">
+		
+			<div class="dp">
+			<img src="4012.jpg" class="dpicn" alt="dp">
+			</div>
+		</div>
+
+	</header>
+
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					<div class="nav-option option1">
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png" class="nav-img"
+							alt="dashboard">
+						<h3> Dashboard</h3>
+					</div>
+
+
+					<div class="nav-option option4">
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+							class="nav-img"
+							alt="institution"><a href="./PHP/bus management.php">
+						<h3> Bus Ticket Booking info</h3></a>
+					</div>
+
+					<div class="nav-option option5">
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png" class="nav-img" alt="blog"><a href="#profile">
+						<h3> Profile</h3></a>
+					</div>
+
+					<div class="nav-option option6">
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png" class="nav-img" alt="settings"><a href="#settings">
+						<h3> Settings</h3></a>
+					</div>
+
+					<div class="nav-option logout">
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout"><a href="Index.html">
+						<h3>Logout</h3></a>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+
+			<div class="searchbar2">
+				<input type="text" name="" id="" placeholder="Search">
+				<div class="searchbtn">
+				<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png" class="icn srchicn" alt="search-button">
+				</div>
+			</div>
+
+			<div class="box-container">
+
+				<div class="box box1">
+					<div class="text">
+						<h2 class="topic-heading"> <a href="./PHP/add_bus.php">ADD BUS Details</a></h2>
+					</div>
+
+					<img src="https://image.freepik.com/free-vector/bus-logo-abstract_7315-17.jpg" alt="Views">
+				</div>
+
+				<div class="box box2">
+					<div class="text">
+						<h2 class="topic-heading"><a href="./PHP/detele_bus.php">DELETE BUS Details</a></h2>
+					</div>
+					<img src="https://image.freepik.com/free-vector/bus-logo-abstract_7315-17.jpg" alt="likes">
+				</div></div>
+
+
+
+				<div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">Recent Update</h1>
+                        <button class="view">View All</button>
+                    </div>
+     
+                    <div class="report-body">
+                        <div class="report-topic-heading">
+                            <h3 class="t-op">Bus Name</h3>
+                            <h3 class="t-op">Source To Destination</h3>
+                            <h3 class="t-op">Starting to Arrival Time</h3>
+                            <h3 class="t-op"></h3>
+                        </div>
+     
+                        <div class="items">
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">M R K</h3>
+                                <h3 class="t-op-nextlvl">Sirkali to mayiladuthur</h3>
+                                <h3 class="t-op-nextlvl">10:00am to 10:40am</h3>
+							
+                            </div>
+     
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">D T K</h3>
+                                <h3 class="t-op-nextlvl">Sirkali to mayiladuthur</h3>
+                                <h3 class="t-op-nextlvl">11:20am to 12:00am</h3>
+								
+                              
+                            </div>
+     
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">S R E E</h3>
+                                <h3 class="t-op-nextlvl">Sirkali to mayiladuthur</h3>
+                                <h3 class="t-op-nextlvl">01:00pm to 01:40pm</h3>
+                                
+                            </div>
+                    </div>
+                </div>
+
+	<script>
+let menuicn = document.querySelector(".menuicn");
+let nav = document.querySelector(".navcontainer");
+
+menuicn.addEventListener("click",()=>
+{
+	nav.classList.toggle("navclose");
+})
+</script>
+</body>
+</html>
